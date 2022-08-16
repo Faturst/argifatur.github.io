@@ -1,303 +1,725 @@
- <!DOCTYPE html>
-  <html>
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Argi's Portfolio</title>
+</head>
 
-    	<title>Argi Nur F | Home</title>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Argi Nur Faturrohman</a>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="uil uil-briefcase nav__icon"></i>Qualification
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
 
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="shortcut icon" type="image/ico" href="favicon.ico">
-    </head>
+            </div>
 
-    <body id="home" class="scrollspy">
+            <div class="nav__btns">
 
-    	<!-- navbar -->
-    <div class="navbar-fixed">
-		 <nav class="deep-purple darken-4">
-		   <div class="container">
-		      <div class="nav-wrapper">
-		        <a href="#home" class="brand-logo">Argi NF</a>
-		        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <!-- Theme change button -->
 
-		        <ul class="right hide-on-med-and-down">
-		          	<li><a href="#about">About Me</a></li>
-				    <li><a href="#clients">Clients</a></li>
-				    <li><a href="#services">Services</a></li>
-				    <li><a href="#portfolio">Portfolio</a></li>
-				    <li><a href="#contact">Contact Me</a></li>
-		        </ul>
-		      </div>
-		    </div>
-		   </nav>
-	</div>
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-		<!-- sidenav -->
-		<ul class="sidenav" id="mobile-nav">
-			<li><a href="#about">About Me</a></li>
-		    <li><a href="#clients">Clients</a></li>
-		    <li><a href="#services">Services</a></li>
-		    <li><a href="#portfolio">Portfolio</a></li>
-		    <li><a href="#contact">Contact Me</a></li>
-		</ul>
-        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"> </i>
 
-        <!-- silder -->
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <div class="slider">
-		    <ul class="slides">
-		      <li>
-		        <img src="img/3.jpg"> <!-- random image -->
-		        <div class="caption center-align">
-		          <h3 class="black-text">Membantu Anda</h3>
-		          <h5 class="light black-text text-lighten-3">Dalam Merancang Website Bisnis Anda</h5>
-		        </div>
-		      </li>
-		      <li>
-		        <img src="img/4.jpg"> <!-- random image -->
-		        <div class="caption center-align">
-		          <h3 class="black-text">Dengan Budget Relevan</h3>
-		          <h5 class="light black-text text-lighten-3">Tidak Mahal Tidak Juga Murah</h5>
-		        </div>
-		      </li>
-		      <li>
-		        <img src="img/5.jpg"> <!-- random image -->
-		        <div class="caption right-align">
-		          <h3 class="black-text">Dengan Teknologi Relevan</h3>
-		          <h5 class="light black-text text-lighten-3">Dapat Membantu Anda Merancang Website</h5>
-		        </div>
-		      </li>
-		     </ul>
-		 </div>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://linkedin.com/in/argifatur" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://instagram.com/argi.nf" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="mailto:argifatur@gmail.com" target="_blank" class="home__social-icon">
+                            <i class="uil uil-google"></i>
+                        </a>
+                    </div>
 
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                            130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                            97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                            0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                            165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                            129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                            -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            <image class="home__blob-img" x="20" y="18" xlink:href="assets/img/argi-perfil.png" />
+                        </g>
+                    </svg>
+                </div>
 
+                <div class="home__data">
+                    <h1 class="home__title">Hi, I'm Argi</h1>
+                    <h3 class="home__subtitle">Web developer</h3>
+                    <p class="home__description">High level experience in web development and development knowledge, producing quality work.</p>
+                    <a href="#contact" class="button button-flex">
+                        Contact Me <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                    <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+                    <span class="home__scroll-name">Scroll down</span>
+                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-		 <!-- about us -->
-		 <section id="about" class="about scrollspy">
-		 	<div class="container">
-		 		<div class="row">
-		 			<h3 class="center light grey-text text-darken-3">About Me</h3>
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
 
-		 			<div class="col m6 light">
-		 				<h5>Argi Nur Faturrohman</h5>
-		 				<p>Seorang pria yang masih muda dengan tekad yang kuat demi rezeki halal. Lulusan SMKN 7 Samarinda, Saat ini sedang di bangku kuliah di salah satu universitas yang ada di Kota Samarinda. Beberapa Aplikasi Berbasis Website telah saya buat, lihatlah portofolio di bawah. Jika anda tertarik? Silakan saja hubungi saya, jangan ragu untuk berkonsultasi, tidak bayar! Terimakasih.</p>
-		 			</div>
-		 			<div class="col m6 light">
-		 				<p>WEB DEVELOPMENT</p>
-		 				<div class="progress">
-		 					<div class="determinate deep-purple darken-4" style="width: 95%"></div>
-		 				</div>
+        <div class="about__container container grid">
+            <img src="assets/img/argi.jpeg" alt="" class="about__img">
 
+            <div class="about__data">
+                <p class="about__description">Web developer, with extensive knowledge
+                    and years of experience, working in web technologies and
+                    Ui / Ux design, delivering quality work.
+                </p>
 
-		 				<p>MOBILE APP DEVELOPMENT</p>
-		 				 <div class="progress">
-      						<div class="indeterminate deep-purple darken-4"></div>
-  						</div>
-		 				<p>GAME DEVELOPMENT</p>
-		 				<div class="progress">
-		 					<div class="indeterminate deep-purple darken-4" style="width: 95%"></div>
-		 				</div>
-		 				</div>
-		 			</div>
-		 		</div>
-		 	</div>
-		 </section>
+                <div class="about__info">
+                    <div>
+                        <span class="about__info-title">03+</span>
+                        <span class="about__info-name">Years of <br> experience</span>
+                    </div>
 
+                    <div>
+                        <span class="about__info-title">10+</span>
+                        <span class="about__info-name">Completed <br> projects</span>
+                    </div>
 
+                    <div>
+                        <span class="about__info-title">03+</span>
+                        <span class="about__info-name">Companies <br> worked</span>
+                    </div>
+                </div>
 
+                <div class="about__buttons">
+                    <a href="https://drive.google.com/file/d/1U139HPxBTvXrfEGvtjEPyv5CMjx3V2eF/view?usp=sharing" target="_blank" class="button button--flex">
+                        Download CV<i class="uil uil-download-alt button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-		 <!-- clients -->
-		 <div id="clients" class="parallax-container scrollspy">
-		 	<div class="parallax"><img src="img/3.jpg"></div>
+    </section>
 
-		 	<div  class="container clients ">
-		 		<h3 class="center light-text">My Clients</h3>
-		 		<div class="row">
-		 			<div class="col m4 s12 center">
-		 				<!-- <img src="img/clients/bcc.png"> -->
-		 			</div>
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
 
-		 			<div class="col m4 s12 center">
-		 				<a href="http://humblestore.rf.gd" title="Humble Store Id" target="_blank"><img src="img/clients/humblestore.png" alt="HumbleStore"></a>
-		 			</div>
+        <div class="skills__container container grid">
+            <div>
+                <!--==================== SKILLS 1 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
 
-		 			<div class="col m4 s12 center">
-		 				<!-- <img src="img/clients/wa.png"> -->
-		 			</div>
-		 		</div>
-		 	</div>
-		 </div>
+                        <div>
+                            <h1 class="skills__title">Frontend developer</h1>
+                            <span class="skills__subtitle">More than 4 years</span>
+                        </div>
 
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
 
-		 <!-- our service -->
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                            </div>
+                        </div>
 
-		 	<section id="services" class="services grey lighten-3 scrollspy">
-		 		<div class="container">
-		 			<div class="row">
-		 				<h3 class="light center grey-text text-darken-3">My Services</h3>
-		 				<div class="col m4 s12">
-		 					<div class="card-panel center">
-		 						<i class="material-icons medium">developer_mode</i>
-		 						<h5>Mobile App</h5>
-		 						<p>(coming soon)</p>
-		 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p> -->
-		 					</div>	
-		 				</div>
-		 				<div class="col m4 s12">
-		 					<div class="card-panel center">
-		 						<i class="material-icons medium">desktop_windows</i>
-		 						<h5>Web Development</h5>
-		 						<p>Saya akan membuatkan website untuk keperluan bisnis anda dengan teknologi & harga yang relevan. Jika anda memiliki masalah pada website yang anda miliki, saya siap membantu untuk memperbaikinya. Konsultasikanlah permasalahan website anda</p>
-		 					</div>	
-		 				</div>
-		 				<div class="col m4 s12">
-		 					<div class="card-panel center">
-		 						<i class="material-icons medium">games</i>
-		 						<h5>Game Development</h5>
-		 						<p>(coming soon)</p>
-		 						<!-- <p>Saya akan membuatkan website untuk keperluan bisnis anda dengan teknologi & harga yang relevan. Jika anda memiliki masalah pada website yang anda miliki, saya siap membantu untuk memperbaikinya. Konsultasikanlah permasalahan website anda</p> -->
-		 					</div>	
-		 				</div>
-		 				<!-- <div class="col m6 s12">
-		 					<div class="card-panel center">
-		 						<i class="material-icons medium">add_task</i>
-		 						<h5>Pengerjaan Tugas</h5>
-		 						<p>Saya tersedia untuk pengerjaan tugas sekolah / kuliah seperti proyek skripsi, Tugas Akhir, ataupun proyek sederhana lainnya. Untuk yang satu kampus dengan saya sudah akan pasti mendapatkan harga kosan.</p>
-		 					</div>	
-		 				</div> -->
-		 			</div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                            </div>
+                        </div>
 
-		 		</div>
-		 	</section>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JavaScript</h3>
+                            </div>
+                        </div>
 
-		 	<!-- portfolio -->
-		 	<section id="portfolio" class="portfolio scrollspy">
-		 		<div class="container">
-		 			<h3 class="light center grey-text text-darken-3">
-		 				Portfolio
-		 			</h3>
-		 			<div class="row">
-		 				<div class="col m3 s12">
-		 					<img src="img/portfolio/1.jpg" class="responsive-img materialboxed">
-		 				</div>
-		 				<div class="col m3 s12">
-		 					<img src="img/portfolio/2.jpg" class="responsive-img materialboxed">
-		 				</div>
-		 				<div class="col m3 s12">
-		 					<img src="img/portfolio/3.jpg" class="responsive-img materialboxed">
-		 				</div>
-		 				<div class="col m3 s12">
-		 					<img src="img/portfolio/4.jpg" class="responsive-img materialboxed">
-		 				</div>
-		 			</div>
-		 			<div class="row">
-		 				<div class="col m3 s12">
-		 					<img src="img/portfolio/5.jpg" class="responsive-img materialboxed">
-		 				</div>
-		 				<div class="col m3 s12">
-		 					<img src="img/portfolio/6.jpg" class="responsive-img materialboxed">
-		 				</div>
-		 				<div class="col m3 s12">
-		 					<img src="img/portfolio/7.jpg" class="responsive-img materialboxed">
-		 				</div>
-		 				<div class="col m3 s12">
-		 					<img src="img/portfolio/8.jpg" class="responsive-img materialboxed">
-		 				</div>
-		 			</div>
-		 		</div>
-		 	</section>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Vue</h3>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Bootstrap</h3>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Materialize</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--==================== SKILLS 2 ====================-->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-server-network skills__icon"></i>
 
+                        <div>
+                            <h1 class="skills__title">Backend developer</h1>
+                            <span class="skills__subtitle">More than 4 years</span>
+                        </div>
 
-		 	<!-- contact -->
-		 	<section id="contact" class="contact gey lighten-3 scrollspy">
-		 		<div class="container">
-		 			<h3 class=" light grey-text text-darken-3 center">
-		 				Contact Me
-		 			</h3>
-		 			<div class="row">
-		 				<div class="col m5 s12">
-		 					<div class="card-panel deep-purple darken-4 white-text center">
-		 						<i class="material-icons">email</i>
-		 						<h5>Feel Free To Contact</h5>
-		 							<p>Silahkan kontak saya jika anda memerlukan jasa saya.</p>
-		 					</div>
-		 					<ul class="collection with-header">
-		 						<li class="collection-header"><h4>Kontak Saya</h4></li>
-		 						<li class="collection-item">argifatur@gmail.com</li>
-		 						<li class="collection-item">085247693795</li>
-		 						<li class="collection-item"><a href="https://linkedin.com/in/argifatur">https://linkedin.com/in/argifatur</a></li>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
 
-		 					</ul>
-		 				</div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">PHP</h3>
+                            </div>
+                        </div>
 
-		 				<div class="col m7 s12">
-		 					<form method="POST" action="https://formspree.io/f/xvovyajj">
-		 						<div class="card-panel">
-		 							<h5>Please Fill Out</h5>
-		 							<div class="input-field">
-		 								<input type="text" name="name" id="name" required class="validate">
-		 								<label for="name">Nama</label>
-		 							</div>
-		 							<div class="input-field">
-		 								<input type="email" name="_replyto" id="email"
-		 								class="validate">
-		 								<label for="email">Email</label>
-		 							</div>
-		 							<div class="input-field">
-		 								<textarea name="message" id="massage" required="" class="materialize-textarea"></textarea>
-		 								<label for="message">Message</label>
-		 							</div>
-		 							<button type="submit" class="btn deep-purple darken-4">Send</button>
-		 						</div>
-		 					</form>
-		 				</div>
-		 			</div>
-		 		</div>
-		 	</section>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CodeIgniter</h3>
+                            </div>
+                        </div>
 
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Laravel</h3>
+                            </div>
+                        </div> 
 
-		 	<!-- footer -->
-		 	<footer class="deep-purple darken-4 white-text center">
-		 		<p>&copy; Made With ❤ By <a href="https://instagram.com/arginf_/">Argi NF</a></p>
-		 	</footer>
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">NodeJS</h3>
+                            </div>
+                        </div>
 
-      <script>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Django</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-github skills__icon"></i>
 
-      	
-      	const  sidenav = document.querySelectorAll('.sidenav');
-      	M.Sidenav.init(sidenav);
+                        <div>
+                            <h1 class="skills__title">Tools</h1>
+                            <span class="skills__subtitle">More than 4 years</span>
+                        </div>
 
-      	const slider = document.querySelectorAll('.slider');
-      	M.Slider.init(slider, {
-      		indicators: false,
-      		height: 400,
-      		transition: 600,
-      		interval: 3000
-      	});
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
 
-      	const parallax = document.querySelectorAll('.parallax');
-      	M.Parallax.init(parallax);
-
-
-
-      	const materialbox = document.querySelectorAll('.materialboxed');
-      	M.Materialbox.init(materialbox);
-
-      	const scroll = document.querySelectorAll('.scrollspy');
-      	M.ScrollSpy.init(scroll, {
-      		scrollOffset: 50
-      	});
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">GIT</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-      </script>
-    </body>
+    </div>
+</div>
 
-  </html>
+</section>
+
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section" id="qualification">
+    <h2 class="section__title">Qualification</h2>
+    <span class="section__subtitle">My personal journey</span>
+
+    <div class="qualification__container container">
+        <div class="qualification__tabs">
+            <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                <i class="uil uil-graduation-cap qualification__icon"></i>
+                Education
+            </div>
+
+            <div class="qualification__button button--flex" data-target="#work">
+                <i class="uil uil-briefcase-alt qualification__icon"></i>
+                Work
+            </div>
+        </div>
+
+        <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+                <!--==================== QUALIFICATION 1 ====================--> 
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">Software Engineer</h3>
+                        <span class="qualification__subtitle">SMKN 7 Samarinda</span>
+                        <div class="qualification__calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2017 - 2020
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+
+                <!--==================== QUALIFICATION 2 ====================--> 
+                <div class="qualification__data">
+                    <div></div>
+                    <div>
+                        <span class="qualification__rounder"></span>
+<!--              <span class="qualification__line"></span>
+-->         </div>
+
+<div>
+    <h3 class="qualification__title">Informatics Engineering</h3>
+    <span class="qualification__subtitle">Universitas Muhammadiyah Kalimantan Timur</span>
+    <div class="qualification__calendar">
+        <i class="uil uil-calendar-alt"></i>
+        2020 - Present
+    </div>
+</div>
+</div> 
+</div>
+
+<!--==================== QUALIFICATION CONTENT 2 ====================-->
+<div class="qualification__content" data-content id="work">
+    <!--==================== QUALIFICATION 1 ====================--> 
+    <div class="qualification__data">
+        <div>
+            <h3 class="qualification__title">Programmer Intern</h3>
+            <span class="qualification__subtitle">CV. Rimbun Komputindo</span>
+            <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2018 - 2019
+            </div>
+        </div>
+
+        <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+        </div>
+    </div>
+
+    <!--==================== QUALIFICATION 2 ====================--> 
+    <div class="qualification__data">
+        <div></div>
+        <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+        </div>
+
+        <div>
+            <h3 class="qualification__title">Junior Programmer</h3>
+            <span class="qualification__subtitle">Utamaweb</span>
+            <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2019 - 2020
+            </div>
+        </div>
+    </div> 
+
+    <!--==================== QUALIFICATION 3 ====================--> 
+    <div class="qualification__data">
+        <div>
+            <h3 class="qualification__title">Software Developer</h3>
+            <span class="qualification__subtitle">CV. Zeen IT Solution</span>
+            <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2020 - 2021
+            </div>
+        </div>
+
+        <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+        </div>
+    </div> 
+
+    <!--==================== QUALIFICATION 4 ====================--> 
+    <div class="qualification__data">
+        <div></div>
+        <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+        </div>
+
+        <div>
+            <h3 class="qualification__title">Programmer Intern</h3>
+            <span class="qualification__subtitle">PT. Trinity Auto</span>
+            <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2020 - 2021
+            </div>
+        </div>
+    </div> 
+
+    <!--==================== QUALIFICATION 5 ====================--> 
+    <div class="qualification__data">
+        <div>
+            <h3 class="qualification__title">Freelance Web Developer</h3>
+            <span class="qualification__subtitle">-</span>
+            <div class="qualification__calendar">
+                <i class="uil uil-calendar-alt"></i>
+                2020 - Present
+            </div>
+        </div>
+
+        <div>
+            <span class="qualification__rounder"></span>
+            <!-- <span class="qualification__line"></span> -->
+        </div>
+    </div> 
+
+</div> 
+
+</div>
+</div>
+</section>
+
+<!--==================== PORTFOLIO ====================-->
+<section class="portfolio section" id="portfolio">
+
+    <h2 class="section__title">Portfolio</h2>
+    <span class="section__subtitle">Most recent works</span>
+
+    <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/1.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Disdik Kota Samarinda</h3>
+                    <p class="portfolio__description">Website adaptable to all devices, 
+                    with ui components and animated interactions.</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/2.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Profile Web @hmblstore.id</h3>
+                    <p class="portfolio__description">Profile Website for business stuff for @hmblstore.id</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/4.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Employee Meal Ration Manager</h3>
+                    <p class="portfolio__description">Application based on website with scanner ID Card for the employees.</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/5.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Al - Amin Mosque</h3>
+                    <p class="portfolio__description">Profile Website for information stuff for Al - Amin Mosque at Samarinda</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/6.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Online Auction</h3>
+                    <p class="portfolio__description">Online Auction Website for fashion stuff.</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/7.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Profile Website Energi Saputra Indonesia</h3>
+                    <p class="portfolio__description">Profile Website for business stuff for ESI.</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/8.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">UMKM Portal Samarinda Seberang</h3>
+                    <p class="portfolio__description">Portal Website for UMKM Samarinda Seberang</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/9.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Profile Website Arjuna AC</h3>
+                    <p class="portfolio__description">Profile Website for business stuf Arjuna AC Samarinda (Profile & Estimation)</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/10.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">SMP Bhakti School Registration</h3>
+                    <p class="portfolio__description">SMP Bhakti School Registration for new student</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/11.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Foundation Website Geser Ya Poris Gaga</h3>
+                    <p class="portfolio__description">Foundation Website for donation Geser Ya Poris Gaga</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/project/12.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Travel Document Apps</h3>
+                    <p class="portfolio__description">Travel Document for BT Group Company, manage incoming outcomint invoice</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- add arrows-->
+        <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+
+        <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+
+    </div>
+
+</section>
+
+<!--==================== PROJECT IN MIND ====================-->
+<section class="project section">
+
+    <div class="project__bg">
+        <div class="project__container container grid">
+            <div class="project__data">
+                <h2 class="project__title">You have a new project?</h2>
+                <p class="project__description">Contact me now</p>
+                <a href="#contact" class="button button--flex button--white">Contact me <i class="uil uil-message project__icon button__icon"></i></a>
+                
+            </div>
+
+            <img src="assets/img/project.svg" alt="" class="project__img">
+        </div>
+    </div>
+
+</section>
+
+<!--==================== CONTACT ME ====================-->
+<section class="contact section" id="contact">
+    <h2 class="section__title">Contact me</h2>
+    <span class="section__subtitle">Get in touch</span>
+
+    <div class="contact__container container grid">
+        <div>
+            <div class="contact__information">
+                <i class="uil uil-phone-alt contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Call me</h3>
+                    <span class="contatc__subtitle">+62 8524 7693 795</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">E-mail</h3>
+                    <span class="contatc__subtitle">argifatur@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-map-marker contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Location</h3>
+                    <span class="contatc__subtitle">Samarinda, Indonesia</span>
+                </div>
+            </div>
+        </div>
+
+        <form action="https://formspree.io/f/xvovyajj" method="POST" class="contact__form grid">
+            <div class="contact__inputs grid">
+                <div class="contact__content">
+                    <label for="" class="contact__label">Name</label>
+                    <input type="text" name="name" class="contact__input">
+                </div>
+
+                <div class="contact__content">
+                    <label for="" class="contact__label">E-mail</label>
+                    <input type="_replyto" class="contact__input">
+                </div>
+            </div>
+
+            <div class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+            </div>
+
+            <div>
+                <button type="submit" style="border: none;" class="button button--flex">
+                    Send message
+                    <i class="uil uil-message button__icon"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+</section>
+</main>
+
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+
+        <p class="footer__copy">&#169; Made With Love & Hand You've Never Held 💙 | Argi Nur Faturrohman</p>
+
+</footer>
+
+<!--==================== SCROLL TOP ====================-->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
+
+
+<!--==================== SWIPER JS ====================-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!--==================== MAIN JS ====================-->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
